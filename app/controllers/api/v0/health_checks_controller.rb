@@ -1,9 +1,18 @@
 module Api
   module V0
     class HealthChecksController < ApiController
-      before_action :authenticate_with_token
+      # before_action :authenticate_with_token
 
       def app
+
+
+        Rails.logger.error("*" * 100)
+        Rails.logger.error(request.headers["health-check-token"])
+        Rails.logger.error(request.headers.inspect)
+        Rails.logger.error("TOKEN #{SiteConfig.health_check_token}")
+        Rails.logger.error("*" * 100)
+        key = request.headers["health-check-token"]
+
         render json: { message: "App is up!" }, status: :ok
       end
 
