@@ -36,6 +36,11 @@ module Api
       def authenticate_with_token
         return if request.local?
 
+        Rails.logger.error("*" * 100)
+        Rails.logger.error(request.headers["health-check-token"])
+        Rails.logger.error(request.headers)
+        Rails.logger.error("TOKEN #{SiteConfig.health_check_token}")
+        Rails.logger.error("*" * 100)
         key = request.headers["health-check-token"]
 
         return if key == SiteConfig.health_check_token
