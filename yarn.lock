@@ -3286,10 +3286,10 @@
   dependencies:
     "@testing-library/dom" "^7.16.2"
 
-"@testing-library/user-event@^12.7.0":
-  version "12.7.0"
-  resolved "https://registry.yarnpkg.com/@testing-library/user-event/-/user-event-12.7.0.tgz#39084ab8c777f6113980b80b8a25f2b7e349f8aa"
-  integrity sha512-KzRM1KNDoW8pJ2HTenrUhTjV6wJMHvWAagDs8DDrYSWz6y4PN+K2jSvlm2bMHWNRk5LTJPo9jqIjNjJ3FlqXNw==
+"@testing-library/user-event@^13.0.13":
+  version "13.0.13"
+  resolved "https://registry.yarnpkg.com/@testing-library/user-event/-/user-event-13.0.13.tgz#fd406a9496ffe7217fd201393d42d126a6ccf666"
+  integrity sha512-C36WYVk/BsFy/proxRSVx3igUZg7qc6FxXKt0X3+vx2+mR9yid0JLyNSeevs11BSNs60I1qdSLz8+jovr8pYcQ==
   dependencies:
     "@babel/runtime" "^7.12.5"
 
